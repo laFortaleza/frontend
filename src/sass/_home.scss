@@ -1,0 +1,41 @@
+@import "variables" ,"mixins";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    // font-family:'Laila', sans-serif; --------------------Poner la Fuente
+}
+header{
+    @include pantalla(xs){
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    };
+    .head{
+        @include pantalla(xs){
+            display: flex;
+            justify-content: center;
+            width: 100vw;
+        };
+    }
+}
+#logo{
+    position:absolute;
+    @include pantalla(xs){
+        width: 7rem;
+        display: flex;
+    }
+}
+#index-fondo{
+    @include pantalla(xs){
+        display: flex;
+        width: 180vw;
+    }
+}
+#wpp{
+    @include pantalla(xs){
+        position:absolute;
+        width: 4rem;
+    }
+}

@@ -1,3 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
 
+@media screen and (min-width: 150px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 150px) {
+  header .head {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+}
+
+#logo {
+  position: absolute;
+}
+@media screen and (min-width: 150px) {
+  #logo {
+    width: 7rem;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  #index-fondo {
+    display: flex;
+    width: 180vw;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  #wpp {
+    position: absolute;
+    width: 4rem;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */
