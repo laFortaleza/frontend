@@ -23,14 +23,15 @@ header{
 #logo{
     position:absolute;
     @include pantalla(xs){
-        width: 7rem;
+        padding-top: .6rem;
+        width:4rem;
         display: flex;
     }
 }
 #index-fondo{
     @include pantalla(xs){
         display: flex;
-        width: 180vw;
+        width: 130vw;
     }
 }
 #wpp{
@@ -39,15 +40,23 @@ header{
         width: 4rem;
     }
 }
-// .carrusel{
-//     @include pantalla(xs){
-    // border: 2px dotted  white;
-    // background-color: $negro;
-    // padding-top: 0rem;
-    // display: flex;
-    // flex-direction: column;
-    // align-content: start;
-    // justify-content: center;
-    // background-color: transparent; 
-//     }
-// }
+.p1{
+    color: $verde-principal;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.p2{
+    color: $verde-principal;
+    font-size: 1.3rem;
+    padding-top: 1.5rem;
+}
+.uvas{
+    overflow: hidden;
+    height: 5.5rem;
+}
+.uvaas{
+    object-fit: cover;
+    max-width: 100vw;
+    height: 18rem;
+}
