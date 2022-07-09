@@ -44,4 +44,62 @@
   }
 }
 
+.carrusel {
+  padding: 0rem;
+  overflow: hidden;
+  background-color: #1c2723;
+}
+@media screen and (min-width: 150px) {
+  .carrusel {
+    height: 70vh;
+    max-width: 40em;
+    padding: 0rem 0.6rem;
+  }
+}
+.carrusel .grande {
+  background-color: #1c2723;
+  width: 300%;
+  height: 50vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+  transform: translateX(0%);
+}
+@media screen and (min-width: 150px) {
+  .carrusel .grande {
+    height: 55vh;
+    padding: 0rem 1rem;
+  }
+}
+.carrusel .grande .img {
+  width: calc(33.3333333333% - 2em);
+  min-height: 40vh;
+  object-fit: cover;
+}
+@media screen and (min-width: 150px) {
+  .carrusel .grande .img {
+    min-height: 35vh;
+  }
+}
+.carrusel .puntos {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c2723;
+}
+.carrusel .puntos .punto {
+  width: 1.3em;
+  height: 1.3em;
+  margin: 0 1em;
+  list-style-type: none;
+  background-color: #26362b;
+  border-radius: 1rem;
+}
+.carrusel .puntos .punto.activo {
+  background-color: #057f2a;
+}
+
 /*# sourceMappingURL=index.css.map */
