@@ -1,0 +1,83 @@
+@import "variables", "mixins";
+.video{
+    @include pantalla(xs){
+        background-color: $verde-pino;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    };
+    .reproduccionVideo{
+        @include pantalla(xs){
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 4px 10px;
+            background-color: #fff;
+            height: 54%;
+            width: 88%;
+        };
+        
+    }
+}
+.fila1{
+    video{
+        @include pantalla(xs){
+            width: 100%;
+            
+        };
+    }
+}
+.fila2{
+    height: px;
+}
+.barra1{
+    @include pantalla(xs){
+        background-color: silver;
+        height: 4px;
+    };
+}
+.barra1:hover{
+    height: 6px;
+}
+.barra2{
+    @include pantalla(xs){
+        background-color: rgb(128, 20, 42);
+        height: 100%;
+        width: 0%
+    };
+}
+.fila3{
+    @include pantalla(xs){
+        display: grid;
+        grid-template-columns: 1fr 30px; 
+    };
+    .izquierda {
+        @include pantalla(xs){
+            // background-color: $verde-principal;
+            display: grid;
+            grid-template-columns: repeat(5,30px) 150px;
+            align-items: center;
+        };
+        img{
+            @include pantalla(xs){
+                width: 3.3rem;
+                padding-right:2rem;
+            };
+            
+        }
+    }
+}
+.p3{
+    color: $naranja-oscuro;
+    font-size: 1.3rem;
+    padding: 3rem 0 2rem;
+    text-align: center;
+}
+.btnServicios{
+    color: $verde-principal;
+    border: 1px solid $verde-principal;
+    border-radius: 6px;
+    padding: .4rem;
+    text-decoration: none;
+    margin-bottom: 2rem;
+}

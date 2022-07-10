@@ -44,15 +44,14 @@
             
         }
         .punto{
-            width:  1.3em;
-            height: 1.3em;
             margin: 0 1em ;
             list-style-type: none;
             // @include neo( 1 , 1em , .6em );
             background-color: $verde-pino;
             border-radius: 1rem;
             @include pantalla(xs){
-        
+                width:  1em;
+                height: 1em;
             }
         }
         .punto.activo{

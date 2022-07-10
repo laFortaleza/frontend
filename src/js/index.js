@@ -1,4 +1,5 @@
 'use strict'
+//Carrusel
 const d = document;
 const grande = d.querySelector('.grande')
 const punto = d.querySelectorAll('.punto')
@@ -15,3 +16,24 @@ punto.forEach((cadaPunto, i)=>{
 
     })
 })
+// Video
+const video = document.querySelector(".vid")
+const btnPlay = document.querySelector(".play")
+const btnReplay = document.querySelector(".replay");
+const btnVolume = document.querySelector(".volume");
+
+let inicio = ()=>{
+    btnPlay.addEventListener("click" ,play)
+    // btnReplay.addEventListener("onclick", replay);
+    // btnVolume.addEventListener("onclick", volume);
+}
+function play(){
+    video.play()
+}
+// function replay(){
+
+// }
+// function volume(){
+
+// }
+inicio();

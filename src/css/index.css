@@ -56,17 +56,22 @@
   color: #057f2a;
   font-size: 1.3rem;
   padding-top: 1.5rem;
+  text-align: center;
 }
 
-.uvas {
-  overflow: hidden;
-  height: 5.5rem;
+@media screen and (min-width: 150px) {
+  .containerUvas {
+    overflow: hidden;
+    height: 5.5rem;
+  }
 }
 
-.uvaas {
-  object-fit: cover;
-  max-width: 100vw;
-  height: 18rem;
+@media screen and (min-width: 150px) {
+  .uvas {
+    object-fit: cover;
+    max-width: 100vw;
+    height: 18rem;
+  }
 }
 
 .carrusel {
@@ -117,15 +122,104 @@
   background-color: #1c2723;
 }
 .carrusel .puntos .punto {
-  width: 1.3em;
-  height: 1.3em;
   margin: 0 1em;
   list-style-type: none;
   background-color: #26362b;
   border-radius: 1rem;
 }
+@media screen and (min-width: 150px) {
+  .carrusel .puntos .punto {
+    width: 1em;
+    height: 1em;
+  }
+}
 .carrusel .puntos .punto.activo {
   background-color: #057f2a;
+}
+
+@media screen and (min-width: 150px) {
+  .video {
+    background-color: #26362b;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 150px) {
+  .video .reproduccionVideo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4px 10px;
+    background-color: #fff;
+    height: 54%;
+    width: 88%;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  .fila1 video {
+    width: 100%;
+  }
+}
+
+.fila2 {
+  height: px;
+}
+
+@media screen and (min-width: 150px) {
+  .barra1 {
+    background-color: silver;
+    height: 4px;
+  }
+}
+
+.barra1:hover {
+  height: 6px;
+}
+
+@media screen and (min-width: 150px) {
+  .barra2 {
+    background-color: rgb(128, 20, 42);
+    height: 100%;
+    width: 0%;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  .fila3 {
+    display: grid;
+    grid-template-columns: 1fr 30px;
+  }
+}
+@media screen and (min-width: 150px) {
+  .fila3 .izquierda {
+    display: grid;
+    grid-template-columns: repeat(5, 30px) 150px;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 150px) {
+  .fila3 .izquierda img {
+    width: 3.3rem;
+    padding-right: 2rem;
+  }
+}
+
+.p3 {
+  color: #ff5d02;
+  font-size: 1.3rem;
+  padding: 3rem 0 2rem;
+  text-align: center;
+}
+
+.btnServicios {
+  color: #057f2a;
+  border: 1px solid #057f2a;
+  border-radius: 6px;
+  padding: 0.4rem;
+  text-decoration: none;
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=index.css.map */
