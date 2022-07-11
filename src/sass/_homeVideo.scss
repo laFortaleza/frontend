@@ -2,11 +2,18 @@
 .video{
     @include pantalla(xs){
         background-color: $verde-pino;
-        height: 50vh;
+        // height: 100%;
         display: flex;
         align-items: center;
         flex-direction: column;
+        padding-bottom: 1.6rem;
     };
+    @include pantalla(md){
+        display: flex;
+        flex-direction: row;
+        padding-right: 2rem;
+       padding-bottom: 0;
+    }
     .reproduccionVideo{
         @include pantalla(xs){
             display: grid;
@@ -15,11 +22,15 @@
             background-color: #fff;
             height: 54%;
             width: 88%;
-            overflow-y: hidden;
         };
+        @include pantalla(md){
+            background-color: $verde-pino;
+            width: 60%;
+        }
     }
 }
 .fila1{
+    // height: calc(100% - );
     video{
         @include pantalla(xs){
             width: 100%;
@@ -27,7 +38,7 @@
     }
 }
 .fila2{
-    height: px;
+    height: 0px;
 }
 .barra1{
     @include pantalla(xs){
@@ -70,7 +81,10 @@
         font-size: 1rem;
         padding: 3rem 0 2rem;
         text-align: center;
-    };            
+    }; 
+    @include pantalla(md){
+        font-size: 1.3rem;
+    }     
 
 }
 .btnServicios{
@@ -83,5 +97,24 @@
         margin-bottom: 2rem;
         font-size: .8rem;
     }
-
+    @include pantalla(md){
+        font-size: .9rem;
+    }
+}
+.btnServicios:hover{
+    color: #fff;
+    background-color: $verde-principal;
+}
+.texto{
+    @include pantalla(xs){
+        text-align: center;
+        overflow-y: hidden;
+        padding-bottom: 1.5rem;
+    }  @include pantalla(md){
+        width: 60%;
+        margin-right: 1rem;
+        height: 28vh;
+        padding: 0 2rem;
+        border-right:2px solid $naranja-oscuro;
+    }  
 }

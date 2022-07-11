@@ -30,11 +30,18 @@ header{
         width:4rem;
         display: flex;
     }
+    @include pantalla(md){
+        width: 4.2rem;
+    }
+}
+#logo:hover{
+    width: 4.3rem;
 }
 #index-fondo{
     @include pantalla(xs){
         display: flex;
-        width: 130vw;
+        width: 100vw;
+        max-height: 70vh;
     }
 }
 #wpp{
@@ -44,16 +51,27 @@ header{
     }
 }
 .p1{
-    color: $verde-principal;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: center;
+    @include pantalla(xs){
+        color: $verde-principal;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+    };
+    @include pantalla(md){
+        font-size: 1.6rem;
+    }
 }
 .p2{
-    color: $verde-principal;
-    font-size: 1rem;
-    padding-top: 1.5rem;
-    text-align: center;
+        
+    @include pantalla(xs){
+        color: $verde-principal;
+        font-size: 1rem;
+        padding: 1.5rem 0;
+        text-align: center;
+    };
+    @include pantalla (md){
+        font-size: 1.3rem;
+    }
 }
 .containerUvas{
     @include pantalla(xs){
@@ -71,7 +89,7 @@ header{
     @include pantalla(xs){
         object-fit: cover;
         max-width: 100vw;
-        height: 18rem;
+        min-height: 18rem;
     }
 }
 

@@ -10,7 +10,7 @@
     .grande{
         background-color: $verde-dark;
         width:300%;
-        height: 50vh;
+        // height: 50vh;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
@@ -19,7 +19,7 @@
         transition: all .5s ease;
         transform: translateX(0%);
         @include pantalla(xs){
-            height: 55vh;
+            // height: 50%;
             padding: 0rem 1.5rem;
             border-left: 2px solid $naranja-oscuro;
             border-right: 2px solid $naranja-oscuro;
@@ -27,10 +27,10 @@
         
         .img{
             width: calc( 100% / 3 - 2em);
-            min-height: 40vh;
+            // min-height: 40vh;
             object-fit: cover;
             @include pantalla(xs){
-                min-height: 35vh;
+                min-height:50vh ;
             }
         }
     }
@@ -40,6 +40,7 @@
         justify-content: center;
         align-items: center;
         background-color: $verde-dark;
+        padding-top: 1rem;
         @include pantalla(xs){
             
         }
