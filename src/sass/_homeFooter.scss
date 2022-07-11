@@ -1,0 +1,62 @@
+@import "variables", "mixins";
+footer{
+    background-color: $verde-dark;
+    text-align: center
+}
+.LaFortaleza{
+    @include pantalla(xs){
+        padding-top: 2rem;
+        color: $verde-principal;
+        
+    };
+    #logoFooter{
+        @include pantalla(xs){
+            width: 9rem;
+        };
+    }
+    .p6{
+        @include pantalla(xs){
+            font-size: 1.2rem;
+            padding:1rem 0;
+        };
+    }
+    .p7{
+        @include pantalla(xs){
+            font-size:1rem;
+            padding-bottom: 3rem; 
+        };
+    }
+}
+.menu{
+    @include pantalla(xs){
+        padding-bottom: 2rem;
+    };
+    li a{
+        @include pantalla(xs){
+            font-size: 1rem;
+            color: $naranja-oscuro;
+            text-decoration: none;
+            line-height: 2rem;
+        };
+    }
+    li a:active{
+        color: $naranja-oscuro;
+    }
+    li a:hover{
+        // font-size: 1.1em;
+        color: $verde-principal;
+    }
+}
+.redesSociales{
+    background-color: $verde-principal;
+    // @include pantalla(xs){
+    //     height: 10vh
+    // };
+    img{
+        @include pantalla(xs){
+            width: 1.6rem;
+            // padding:.4rem;
+            margin: 1.4rem 1rem;
+        };
+    }
+}

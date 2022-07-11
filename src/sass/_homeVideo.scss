@@ -16,14 +16,12 @@
             height: 54%;
             width: 88%;
         };
-        
     }
 }
 .fila1{
     video{
         @include pantalla(xs){
             width: 100%;
-            
         };
     }
 }
@@ -53,7 +51,6 @@
     };
     .izquierda {
         @include pantalla(xs){
-            // background-color: $verde-principal;
             display: grid;
             grid-template-columns: repeat(5,30px) 150px;
             align-items: center;
@@ -61,23 +58,29 @@
         img{
             @include pantalla(xs){
                 width: 3.3rem;
-                padding-right:2rem;
+                padding-right:2.3rem;
             };
-            
         }
     }
 }
 .p3{
-    color: $naranja-oscuro;
-    font-size: 1.3rem;
-    padding: 3rem 0 2rem;
-    text-align: center;
+    @include pantalla(xs){
+        color: $naranja-oscuro;
+        font-size: 1rem;
+        padding: 3rem 0 2rem;
+        text-align: center;
+    };            
+
 }
 .btnServicios{
-    color: $verde-principal;
-    border: 1px solid $verde-principal;
-    border-radius: 6px;
-    padding: .4rem;
-    text-decoration: none;
-    margin-bottom: 2rem;
+    @include pantalla(xs){
+        color: $verde-principal;
+        border: 1px solid $verde-principal;
+        border-radius: 6px;
+        padding: .4rem;
+        text-decoration: none;
+        margin-bottom: 2rem;
+        font-size: .8rem;
+    }
+
 }

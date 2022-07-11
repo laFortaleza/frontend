@@ -6,6 +6,9 @@
     overflow-x: hidden;
     // font-family:'Laila', sans-serif; --------------------Poner la Fuente
 }
+img{
+    object-fit: cover;
+}
 header{
     @include pantalla(xs){
         display: flex;
@@ -42,13 +45,13 @@ header{
 }
 .p1{
     color: $verde-principal;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
 }
 .p2{
     color: $verde-principal;
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding-top: 1.5rem;
     text-align: center;
 }
@@ -56,6 +59,11 @@ header{
     @include pantalla(xs){
         overflow: hidden;
         height: 5.5rem;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
     }
     
 }
@@ -66,3 +74,4 @@ header{
         height: 18rem;
     }
 }
+

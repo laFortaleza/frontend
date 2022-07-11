@@ -1,0 +1,69 @@
+@import "variables" ,"mixins";
+.frutas{
+    @include pantalla(xs){
+        background-color: $verde-dark;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    };
+    .p4{
+        @include pantalla(xs){
+            color: $verde-principal;
+            font-size: 1rem;
+            padding: 2rem 0;
+            text-align: center;
+            width: 70%;
+        };
+    }
+    .imgAfricultor{
+        @include pantalla(xs){
+            display: flex;
+            justify-content: center;
+        };
+        .agricultor{
+            @include pantalla(xs){
+                width: 88%;
+            };
+        }
+    }
+}
+.verduras{
+    @include pantalla(xs){
+        height: 60vh;
+        background-color: $verde-pino;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    };
+    .p5{
+        @include pantalla(xs){
+            color: $naranja-oscuro;
+            font-size: 1rem;
+            padding: 2rem 0;
+            text-align: center;
+            width: 65%;
+        };
+    }
+    .alimentos{
+        img{
+            @include pantalla(xs){
+                border-radius: 50%;
+                width: 80px;
+                height: 80px;
+                margin: 0 15px;
+            };
+        }
+    }
+    .cultivo{
+        @include pantalla(xs){
+            display: flex;
+            justify-content: center;
+        };
+        .cosecha{
+            @include pantalla(xs){
+                width: 88%;
+                padding-top: 30px;
+            };
+        }
+    }
+}
