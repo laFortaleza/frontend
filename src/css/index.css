@@ -118,6 +118,11 @@ img {
     padding: 2rem 1rem;
   }
 }
+@media screen and (min-width: 700px) {
+  .carrusel {
+    padding: 2rem 2rem;
+  }
+}
 .carrusel .grande {
   background-color: #1c2723;
   width: 300%;
@@ -135,6 +140,11 @@ img {
     border-right: 2px solid #ff5d02;
   }
 }
+@media screen and (min-width: 700px) {
+  .carrusel .grande {
+    width: 270%;
+  }
+}
 .carrusel .grande .img {
   width: calc(33.3333333333% - 2em);
   object-fit: cover;
@@ -142,6 +152,11 @@ img {
 @media screen and (min-width: 150px) {
   .carrusel .grande .img {
     min-height: 50vh;
+  }
+}
+@media screen and (min-width: 700px) {
+  .carrusel .grande .img {
+    max-height: 40vh;
   }
 }
 .carrusel .puntos {
@@ -331,7 +346,7 @@ img {
 @media screen and (min-width: 700px) {
   .frutas .p4 {
     font-size: 1.3rem;
-    padding: 0;
+    padding: 0 0 0 0.4rem;
     text-align: center;
     width: 100%;
     border-left: 2px solid #057f2a;
@@ -370,8 +385,28 @@ img {
     padding-bottom: 1.6rem;
   }
 }
+@media screen and (min-width: 700px) {
+  .verduras {
+    flex-direction: row;
+    padding-bottom: 0rem;
+  }
+}
 @media screen and (min-width: 150px) {
-  .verduras .p5 {
+  .verduras .verduras1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.6rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .verduras .verduras1 {
+    padding-bottom: 0rem;
+    border-right: 1px solid #ff5d02;
+  }
+}
+@media screen and (min-width: 150px) {
+  .verduras .verduras1 .p5 {
     color: #ff5d02;
     font-size: 1rem;
     padding: 2rem 0;
@@ -379,12 +414,25 @@ img {
     width: 65%;
   }
 }
+@media screen and (min-width: 700px) {
+  .verduras .verduras1 .p5 {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+  }
+}
 @media screen and (min-width: 150px) {
-  .verduras .alimentos img {
+  .verduras .verduras1 .alimentos img {
     border-radius: 50%;
     width: 80px;
     height: 80px;
     margin: 0 15px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .verduras .verduras1 .alimentos img {
+    margin: 0rem;
+    width: 65px;
+    height: 65px;
   }
 }
 @media screen and (min-width: 150px) {
@@ -393,16 +441,36 @@ img {
     justify-content: center;
   }
 }
+@media screen and (min-width: 700px) {
+  .verduras .cultivo {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 150px) {
   .verduras .cultivo .cosecha {
     width: 88%;
     padding-top: 30px;
   }
 }
+@media screen and (min-width: 700px) {
+  .verduras .cultivo .cosecha {
+    width: 100%;
+    padding-top: 0;
+    padding: 1rem 2rem;
+  }
+}
 
 footer {
   background-color: #1c2723;
   text-align: center;
+}
+@media screen and (min-width: 700px) {
+  footer {
+    display: grid;
+    grid-template: repeat(2, auto)/repeat(2, auto);
+    grid-template-areas: "info menuF" "footer footer";
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 150px) {
@@ -411,9 +479,20 @@ footer {
     color: #057f2a;
   }
 }
+@media screen and (min-width: 700px) {
+  .LaFortaleza {
+    grid-area: info;
+    margin-left: 4rem;
+  }
+}
 @media screen and (min-width: 150px) {
   .LaFortaleza #logoFooter {
     width: 9rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .LaFortaleza #logoFooter {
+    width: 7rem;
   }
 }
 @media screen and (min-width: 150px) {
@@ -422,10 +501,15 @@ footer {
     padding: 1rem 0;
   }
 }
+@media screen and (min-width: 700px) {
+  .LaFortaleza .p6 {
+    font-size: 1.2rem;
+  }
+}
 @media screen and (min-width: 150px) {
   .LaFortaleza .p7 {
     font-size: 1rem;
-    padding-bottom: 3rem;
+    padding: 0.5rem 0 4rem;
   }
 }
 
@@ -434,12 +518,24 @@ footer {
     padding-bottom: 2rem;
   }
 }
+@media screen and (min-width: 700px) {
+  .menu {
+    grid-area: menuF;
+    margin-right: 6rem;
+    border-left: 1px solid #057f2a;
+  }
+}
 @media screen and (min-width: 150px) {
   .menu li a {
     font-size: 1rem;
     color: #ff5d02;
     text-decoration: none;
     line-height: 2rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .menu li a {
+    line-height: 2.8rem;
   }
 }
 .menu li a:active {
@@ -451,6 +547,11 @@ footer {
 
 .redesSociales {
   background-color: #057f2a;
+}
+@media screen and (min-width: 700px) {
+  .redesSociales {
+    grid-area: footer;
+  }
 }
 @media screen and (min-width: 150px) {
   .redesSociales img {

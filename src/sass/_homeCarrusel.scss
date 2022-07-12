@@ -7,6 +7,9 @@
         max-width: 100vw;
         padding: 2rem 1rem;
     }
+    @include pantalla (md){
+        padding: 2rem 2rem;
+    }
     .grande{
         background-color: $verde-dark;
         width:300%;
@@ -24,6 +27,9 @@
             border-left: 2px solid $naranja-oscuro;
             border-right: 2px solid $naranja-oscuro;
         }
+        @include pantalla (md){
+            width:270%;
+        }
         
         .img{
             width: calc( 100% / 3 - 2em);
@@ -31,6 +37,9 @@
             object-fit: cover;
             @include pantalla(xs){
                 min-height:50vh ;
+            }
+            @include pantalla(md){
+                max-height: 40vh;
             }
         }
     }

@@ -1,7 +1,15 @@
 @import "variables", "mixins";
 footer{
     background-color: $verde-dark;
-    text-align: center
+    text-align: center;
+    @include pantalla(md){
+        display: grid;
+        grid-template: repeat(2,auto)/repeat(2, auto);
+        grid-template-areas:
+        "info menuF"
+        "footer footer";
+        align-items: center;
+    }
 }
 .LaFortaleza{
     @include pantalla(xs){
@@ -9,9 +17,17 @@ footer{
         color: $verde-principal;
         
     };
+    @include pantalla(md){
+        grid-area: info ;
+        margin-left: 4rem;
+    }
+
     #logoFooter{
         @include pantalla(xs){
             width: 9rem;
+        };
+        @include pantalla(md){
+            width: 7rem;
         };
     }
     .p6{
@@ -19,18 +35,27 @@ footer{
             font-size: 1.2rem;
             padding:1rem 0;
         };
+        @include pantalla(md){
+            font-size: 1.2rem;
+        };
     }
     .p7{
         @include pantalla(xs){
             font-size:1rem;
-            padding-bottom: 3rem; 
-        };
+            padding: .5rem 0 4rem; 
+        };   
     }
 }
 .menu{
     @include pantalla(xs){
         padding-bottom: 2rem;
     };
+    @include pantalla(md){
+        grid-area: menuF;
+        margin-right: 6rem;
+        border-left: 1px solid $verde-principal
+    };
+    
     li a{
         @include pantalla(xs){
             font-size: 1rem;
@@ -38,6 +63,9 @@ footer{
             text-decoration: none;
             line-height: 2rem;
         };
+         @include pantalla(md){
+            line-height: 2.8rem;
+        }
     }
     li a:active{
         color: $naranja-oscuro;
@@ -51,7 +79,11 @@ footer{
     background-color: $verde-principal;
     // @include pantalla(xs){
     //     height: 10vh
-    // };
+    // }; 
+    @include pantalla(md){
+        grid-area: footer;
+    }
+    
     img{
         @include pantalla(xs){
             width: 1.6rem;
