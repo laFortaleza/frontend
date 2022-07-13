@@ -627,13 +627,14 @@ header label {
 
 .menu-nav {
   text-align: center;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   padding-top: 6rem;
   left: 0;
-  width: 94%;
+  width: 30%;
   height: 100vh;
-  background: rgba(51, 51, 51, 0.9);
+  background: #1c2723;
+  opacity: 0.8;
   transition: all 0.5s;
   transform: translateX(-100%);
 }
@@ -647,11 +648,35 @@ header label {
 }
 
 .menu-nav a:hover {
-  background: #057f2a;
+  color: #057f2a;
 }
 
 #menu-bar:checked ~ .menu-nav {
   transform: translateX(0%);
+}
+
+@media screen and (min-width: 700px) {
+  .menu-nav {
+    position: static;
+    width: 100vw;
+    padding-top: 1.4rem;
+    height: auto;
+    transform: translate(0%);
+    justify-content: space-around;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  header label {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .menu-nav a {
+    border: none;
+  }
 }
 
 .containerMenu {
@@ -659,6 +684,7 @@ header label {
   display: table;
   color: #ff5d02;
   position: absolute;
+  z-index: 2;
 }
 
 /*# sourceMappingURL=index.css.map */

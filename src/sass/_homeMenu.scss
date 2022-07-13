@@ -12,14 +12,15 @@ header label{
 
 .menu-nav{
 text-align: center;
-position: absolute;
+position: fixed;
 z-index: 1;
 padding-top: 6rem;
 // top: 50px;
 left: 0;
-width:94%;
+width: 30%;
 height: 100vh;
-background: rgba(51, 51, 51, 0.9);
+background: $verde-dark;
+opacity: .8;
 transition: all 0.5s;
 transform: translateX(-100%);
 
@@ -36,33 +37,42 @@ transform: translateX(-100%);
 
 
 .menu-nav a:hover{
-    background: #057f2a;
+    color: #057f2a;
 }
 
 #menu-bar:checked ~ .menu-nav{
     transform: translateX(0%);
 }
 
-// @media(min-width:1024px){/* escritorio */
-//     .menu{
-//        position: static;
-//        width: auto;
-//        height: auto;
-//        transform: translate(0%);
-//        float: right;
-//        display: flex;
-//     }
-//     header label{
-//        display:none ;
-//     }
-//     .menu a {
-//        border: none;
-//     }
-// } 
+.menu-nav{
+    @include pantalla(md){
+        position: static;
+        width: 100vw;
+        padding-top: 1.4rem;
+        // padding-right: 90rem;
+        height: auto;
+        transform: translate(0%);
+        justify-content: space-around;
+        // float: right;
+        display: flex;
+
+    }
+}
+    header label{
+        @include pantalla(md){
+            display:none ;
+        }
+    }
+    .menu-nav a {
+        @include pantalla (md){
+            border: none;
+        }
+    }
+
 .containerMenu{
     width: 100%;
     display: table;
     color: $naranja-oscuro;
     position: absolute;
-    // z-index:2;
+    z-index:2;
 }
