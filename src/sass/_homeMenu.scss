@@ -1,8 +1,47 @@
 @import "variables" ,"mixins";
+.menuBarra{
+    position:absolute;
+    background-color: $verde-dark;
+    opacity: .8;
+    z-index: 100;
+    @include pantalla(xs){
+        height: auto;
+        width: 30%;
+    }
+    @include pantalla (md){
+        height: auto;
+        width: 30%;
+    }
+}
+.itemMenu{
+    text-align: center;
+    z-index: 100000;
+    position: sticky;
+    @include pantalla(xs){
+        margin-top: 3rem;
+    }
+    @include pantalla (md){
+        margin-top: 6rem;
 
-// .menuBarra{
-//     // width: 30px;
-//     // height: 30px;
-//     // background-color: aqua;
-//     // position: absolute;
-// }
+    }
+    .item{
+        @include pantalla(xs){
+            padding-bottom: 2.6rem;
+        }
+        @include pantalla(md){
+            padding-bottom: 4rem;
+        }
+        a{
+            color: $naranja-claro;
+            opacity: 1;
+            text-decoration: none;
+            @include pantalla(xs){
+                font-size: .9rem;
+            }
+            @include pantalla(md){
+                font-size: 1.1rem;
+                font-weight: bold;
+            }
+        }
+    }
+}

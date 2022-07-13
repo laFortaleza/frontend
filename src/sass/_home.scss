@@ -46,12 +46,7 @@ header{
         max-height: 70vh;
     }
 }
-#wpp{
-    @include pantalla(xs){
-        position:absolute;
-        width: 4rem;
-    }
-}
+
 .p1{
     @include pantalla(xs){
         color: $verde-principal;
@@ -95,29 +90,33 @@ header{
     }
 }
 #wpp{
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    width: 95vw;
-    height: 100%;
+    // display: flex;
+    padding: 1rem;
+    margin:35% 0 0 95%;
     z-index: 100;
+    position: fixed;
     @include pantalla (xs){
-        width: 85vw;
-        height: 35%;
+        margin:80vh 0 0 82%;
+        // width: 85vw;
+        // height: 35%;
     }
     @include pantalla(sm){
-        height: 29%;
+        margin:80vh 0 0 88%;
+        
     }
     @include pantalla (md){
-        width: 93vw;
-        height: 46%;
+        margin:80vh 0 0 95%;
+        // background-color: aqua;
+        // width: 95vw;
+        // height: 50vh;
+        // width: 93vw;
+        // height: 46%;
     }
     .whatsapp{
         @include pantalla(xs){
-            position:fixed;
             width: 30px;
-            } 
-            }
+        }
+    }
     .whatsapp:hover {
         transition: 1s;
         transform: scale(1.3);    
