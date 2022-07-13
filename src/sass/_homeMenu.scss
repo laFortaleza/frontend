@@ -1,47 +1,68 @@
 @import "variables" ,"mixins";
-.menuBarra{
-    position:absolute;
-    background-color: $verde-dark;
-    opacity: .8;
-    z-index: 100;
-    @include pantalla(xs){
-        height: auto;
-        width: 30%;
-    }
-    @include pantalla (md){
-        height: auto;
-        width: 30%;
-    }
+#menu-bar{
+    display: none;
 }
-.itemMenu{
-    text-align: center;
-    z-index: 100000;
-    position: sticky;
-    @include pantalla(xs){
-        margin-top: 3rem;
-    }
-    @include pantalla (md){
-        margin-top: 6rem;
 
-    }
-    .item{
-        @include pantalla(xs){
-            padding-bottom: 2.6rem;
-        }
-        @include pantalla(md){
-            padding-bottom: 4rem;
-        }
-        a{
-            color: $naranja-claro;
-            opacity: 1;
-            text-decoration: none;
-            @include pantalla(xs){
-                font-size: .9rem;
-            }
-            @include pantalla(md){
-                font-size: 1.1rem;
-                font-weight: bold;
-            }
-        }
-    }
+header label{
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.menu-nav{
+text-align: center;
+position: absolute;
+z-index: 1;
+padding-top: 6rem;
+// top: 50px;
+left: 0;
+width:94%;
+height: 100vh;
+background: rgba(51, 51, 51, 0.9);
+transition: all 0.5s;
+transform: translateX(-100%);
+
+}
+.menu-nav a{
+    display: block;
+    color: $naranja-oscuro;
+    // height: 100vh;
+    text-decoration: none;
+    padding: 20px;
+    // border-bottom: 1px solid rgba(255, 255, 255, 0.89);
+    overflow-y: hidden;
+}
+
+
+.menu-nav a:hover{
+    background: #057f2a;
+}
+
+#menu-bar:checked ~ .menu-nav{
+    transform: translateX(0%);
+}
+
+// @media(min-width:1024px){/* escritorio */
+//     .menu{
+//        position: static;
+//        width: auto;
+//        height: auto;
+//        transform: translate(0%);
+//        float: right;
+//        display: flex;
+//     }
+//     header label{
+//        display:none ;
+//     }
+//     .menu a {
+//        border: none;
+//     }
+// } 
+.containerMenu{
+    width: 100%;
+    display: table;
+    color: $naranja-oscuro;
+    position: absolute;
+    // z-index:2;
 }

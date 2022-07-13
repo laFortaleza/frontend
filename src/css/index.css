@@ -33,6 +33,7 @@ img {
     padding-top: 0.6rem;
     width: 4rem;
     display: flex;
+    z-index: 2;
   }
 }
 @media screen and (min-width: 700px) {
@@ -613,65 +614,51 @@ footer {
   }
 }
 
-.menuBarra {
-  position: absolute;
-  background-color: #1c2723;
-  opacity: 0.8;
-  z-index: 100;
-}
-@media screen and (min-width: 150px) {
-  .menuBarra {
-    height: auto;
-    width: 30%;
-  }
-}
-@media screen and (min-width: 700px) {
-  .menuBarra {
-    height: auto;
-    width: 30%;
-  }
+#menu-bar {
+  display: none;
 }
 
-.itemMenu {
+header label {
+  float: right;
+  font-size: 28px;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+.menu-nav {
   text-align: center;
-  z-index: 100000;
-  position: sticky;
+  position: absolute;
+  z-index: 1;
+  padding-top: 6rem;
+  left: 0;
+  width: 94%;
+  height: 100vh;
+  background: rgba(51, 51, 51, 0.9);
+  transition: all 0.5s;
+  transform: translateX(-100%);
 }
-@media screen and (min-width: 150px) {
-  .itemMenu {
-    margin-top: 3rem;
-  }
-}
-@media screen and (min-width: 700px) {
-  .itemMenu {
-    margin-top: 6rem;
-  }
-}
-@media screen and (min-width: 150px) {
-  .itemMenu .item {
-    padding-bottom: 2.6rem;
-  }
-}
-@media screen and (min-width: 700px) {
-  .itemMenu .item {
-    padding-bottom: 4rem;
-  }
-}
-.itemMenu .item a {
-  color: #feae4f;
-  opacity: 1;
+
+.menu-nav a {
+  display: block;
+  color: #ff5d02;
   text-decoration: none;
+  padding: 20px;
+  overflow-y: hidden;
 }
-@media screen and (min-width: 150px) {
-  .itemMenu .item a {
-    font-size: 0.9rem;
-  }
+
+.menu-nav a:hover {
+  background: #057f2a;
 }
-@media screen and (min-width: 700px) {
-  .itemMenu .item a {
-    font-size: 1.1rem;
-    font-weight: bold;
-  }
+
+#menu-bar:checked ~ .menu-nav {
+  transform: translateX(0%);
+}
+
+.containerMenu {
+  width: 100%;
+  display: table;
+  color: #ff5d02;
+  position: absolute;
 }
 
 /*# sourceMappingURL=index.css.map */

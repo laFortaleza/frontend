@@ -10,11 +10,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="./src/css/fontello.css">
     <title>La Fortaleza</title>
 </head>
 <body>
     <header>
-        <nav class="menuBarra">
+        <div class="containerMenu">
+            <input type="checkbox" id="menu-bar">
+            
+            <label class="icon-menu" for="menu-bar"></label>
+             <nav class="menu-nav">
+                <a href="">Inicio</a>
+                <a href="">Nosotros</a>
+                <a href="">Servicios</a>
+                <a href="">Reservas</a>
+                <a href="">Contàctanos</a>
+                
+               </nav>
+        </div>
+        <!-- <nav class="menuBarra">
             <div class="botonMenu">
                 <div class="line"></div>
                 <div class="line"></div>
@@ -35,7 +49,7 @@
                 </div>
             </div>
 
-        </nav>
+        </nav> -->
         <div class="head">
             <img id="logo" src="./src/img/Logo.png" alt="Logo La Fortaleza" title="La Fortaleza">
         </div>

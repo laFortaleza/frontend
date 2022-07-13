@@ -31,6 +31,7 @@ header{
         padding-top: .6rem;
         width:4rem;
         display: flex;
+        z-index: 2;
     }
     @include pantalla(md){
         width: 4.2rem;
