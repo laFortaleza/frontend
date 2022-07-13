@@ -15,16 +15,15 @@
        padding-bottom: 0;
     }
     .reproduccionVideo{
+        background-color: $verde-pino;
         @include pantalla(xs){
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 4px 10px;
-            background-color: #fff;
             height: 54%;
             width: 88%;
         };
         @include pantalla(md){
-            background-color: $verde-pino;
             width: 60%;
         }
     }

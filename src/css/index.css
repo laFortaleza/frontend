@@ -230,19 +230,20 @@ img {
     padding-bottom: 0;
   }
 }
+.video .reproduccionVideo {
+  background-color: #26362b;
+}
 @media screen and (min-width: 150px) {
   .video .reproduccionVideo {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 4px 10px;
-    background-color: #fff;
     height: 54%;
     width: 88%;
   }
 }
 @media screen and (min-width: 700px) {
   .video .reproduccionVideo {
-    background-color: #26362b;
     width: 60%;
   }
 }
