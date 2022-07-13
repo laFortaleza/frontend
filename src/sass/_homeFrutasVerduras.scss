@@ -23,7 +23,7 @@
         };
         @include pantalla(md){
             font-size: 1.3rem;
-            padding: 0 0 0 .4rem ;
+            padding: 0 5rem 0 .4rem ;
             text-align: center;
             width: 100%;
             border-left: 2px solid $verde-principal ;
@@ -38,6 +38,9 @@
             justify-content: start;
             padding-left: 1.5rem;
             max-width: 60%;
+        }
+        @include pantalla(lg){
+            max-width: 52%;
         }
         .agricultor{
             @include pantalla(xs){
@@ -75,7 +78,6 @@
         @include pantalla(md){
             padding-bottom: 0rem;
             border-right: 1px solid $naranja-oscuro;
-            
         }
         .p5{
             @include pantalla(xs){
@@ -114,6 +116,9 @@
         };
         @include pantalla(md){
             width: 100%;
+        }
+        @include pantalla (lg){
+            width: 45%;
         }
         .cosecha{
             @include pantalla(xs){

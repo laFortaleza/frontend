@@ -30,6 +30,9 @@
         @include pantalla (md){
             width:270%;
         }
+        @include pantalla (lg){
+            width: 300%;
+        }
         
         .img{
             width: calc( 100% / 3 - 2em);

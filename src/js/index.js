@@ -1,4 +1,6 @@
 'use strict'
+//Menú en Barra
+
 //Carrusel
 const d = document;
 const grande = d.querySelector('.grande')

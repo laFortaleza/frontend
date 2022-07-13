@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    // font-family:'Laila', sans-serif; --------------------Poner la Fuente
+    font-family: 'Lexend Deca','Urbanist', sans-serif;
 }
 img{
     object-fit: cover;
@@ -21,7 +21,9 @@ header{
             justify-content: center;
             width: 100vw;
         };
+        
     }
+    
 }
 #logo{
     position:absolute;
@@ -92,4 +94,32 @@ header{
         min-height: 18rem;
     }
 }
-
+#wpp{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 95vw;
+    height: 100%;
+    z-index: 100;
+    @include pantalla (xs){
+        width: 85vw;
+        height: 35%;
+    }
+    @include pantalla(sm){
+        height: 29%;
+    }
+    @include pantalla (md){
+        width: 93vw;
+        height: 46%;
+    }
+    .whatsapp{
+        @include pantalla(xs){
+            position:fixed;
+            width: 30px;
+            } 
+            }
+    .whatsapp:hover {
+        transition: 1s;
+        transform: scale(1.3);    
+    }
+}

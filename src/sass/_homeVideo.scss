@@ -42,8 +42,8 @@
 }
 .barra1{
     @include pantalla(xs){
-        background-color: silver;
-        height: 4px;
+        background-color: $verde-principal;
+        height: 2px;
     };
 }
 .barra1:hover{
@@ -66,12 +66,16 @@
             display: grid;
             grid-template-columns: repeat(5,30px) 150px;
             align-items: center;
+            padding: 0 0 .5rem 1rem;
         };
         img{
             @include pantalla(xs){
                 width: 3.3rem;
                 padding-right:2.3rem;
             };
+            @include pantalla (md){
+                width: 3.5rem;
+            }
         }
     }
 }
